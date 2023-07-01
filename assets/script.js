@@ -9,14 +9,19 @@
 
 // GLOBAL VARS
 var timeLeft = 100;
-
+var start = document.getElementById("begin");
+var homeScreen = document.getElementById("homescreen");
+var questionOne = document.getElementById("questionOne");
 
 
 function questionOne (){
-    
+    homeScreen.style.display = "none";
+    questions.style.display = "block";
 
 }
 
-var start = document.getElementById("begin");
+
+
+
 start.addEventListener("click", questionOne);
 

@@ -10,7 +10,7 @@
 body{
     background-color: rgb(55, 55, 55);
 }
-.homescreen{
+#homescreen{
     margin-top: 40px;
 }
 #timer-div{
@@ -63,4 +63,21 @@ body{
     color: black;
     background-color: white;
 
+}
+
+/* NEXT SECTION */
+#questionOne{
+    display: none;
+}
+#questionTwo{
+    display: none;
+}
+#questionThree{
+    display: none;
+}
+#questionFour{
+    display: none;
+}
+#questionFive{
+    display: none;
 }
