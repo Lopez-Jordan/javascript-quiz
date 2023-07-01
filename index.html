@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Quiz!</title>
     <link rel="stylesheet" href="./assets/style.css">
     
 </head>
@@ -30,77 +30,79 @@
 
 <!-- Question 1 ------------------------------------------------------->
     <section id="first" class="questionClass">
-        <h1>Question 1:
+        <h1>Q1: What is the result of the following expression: 5 + "5"?
         </h1>
         <ul>
-            <li><button id="q1correct">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q1incorrect1">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q1incorrect2">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q1incorrect3">blah blah blah blah blah blah blah</button></li>
+            <li><button id="q1correct">55</button></li>
+            <li><button id="q1incorrect1">10</button></li>
+            <li><button id="q1incorrect2">"55"</button></li>
+            <li><button id="q1incorrect3">Error</button></li>
         </ul>
     </section>
 
 <!-- Question 2 ------------------------------------------------------->
     <section id="second" class="questionClass">
-        <h1>Question 2:
+        <h1>Q2: Which method is used to add an element to the end of an array"
         </h1>
         <ul>
-            <li><button id="q2incorrect1">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q2incorrect2">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q2incorrect3">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q2correct">blah blah blah blah blah blah blah</button></li>
+            <li><button id="q2incorrect1">.unshift()</button></li>
+            <li><button id="q2incorrect2">.shift()</button></li>
+            <li><button id="q2incorrect3">.pop()</button></li>
+            <li><button id="q2correct">.push()</button></li>
         </ul>
     </section>
 
 <!-- Question 3 ------------------------------------------------------->
     <section id="third" class="questionClass">
-        <h1>Question 3
+        <h1>Q3: What is the correct way to evaluate if two variables are equal in type AND value?
         </h1>
         <ul>
-            <li><button id="q3correct">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q3incorrect1">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q3incorrect2">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q3incorrect3">blah blah blah blah blah blah blah</button></li>
+            <li><button id="q3incorrect1">=</button></li>
+            <li><button id="q3correct">===</button></li>
+            <li><button id="q3incorrect2">!==</button></li>
+            <li><button id="q3incorrect3">==</button></li>
         </ul>
     </section>
 
 <!-- Question 4 ------------------------------------------------------->
     <section id="fourth" class="questionClass">
-        <h1>Question 4
+        <h1>Q4: What does the value "NaN" represent?
         </h1>
         <ul>
-            <li><button id="q4correct">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q4incorrect1">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q4incorrect2">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q4incorrect3">blah blah blah blah blah blah blah</button></li>
+            <li><button id="q4correct">"Not a number"</button></li>
+            <li><button id="q4incorrect1">"Null"</button></li>
+            <li><button id="q4incorrect2">"Undefined"</button></li>
+            <li><button id="q4incorrect3">"Error</button></li>
         </ul>
     </section>
 
 <!-- Question 5 ------------------------------------------------------->
     <section id="fifth" class="questionClass">
-        <h1>Question 5
+        <h1>Q5: Which of the following is the correct way to write a for-loop?
         </h1>
         <ul>
-            <li><button id="q5correct">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q5incorrect1">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q5incorrect2">blah blah blah blah blah blah blah</button></li>
-            <li><button id="q5incorrect3">blah blah blah blah blah blah blah</button></li>
+            <li><button id="q5incorrect1">for (int i=0; i < arr.length; i++){}</button></li>
+            <li><button id="q5incorrect2">for i in range(arr.length):</button></li>
+            <li><button id="q5correct">for (var i=0; i < arr.length; i++){} </button></li>
+            <li><button id="q5incorrect3">while (i < arr.length){}</button></li>
         </ul>
     </section>
 
-
-
-
-
-
-
-
-
-
-
+<!-- Results------------------------------------------------------->
     <section id="results">
-        <h1>results!</h1>
+        <h1>Results!</h1>
+        <h3>Score: <span id="fill">fill</span></h3>
+        <button id="startOver">Start Over</button>
     </section>
+
+
+
+
+
+
+
+
+
 
 
 </body>
