@@ -13,10 +13,19 @@ var start = document.getElementById("begin");
 var homeScreen = document.getElementById("homescreen");
 var start = document.getElementById("begin");
 var firstEl = document.getElementById("first");
+var timerDivEl = document.getElementById("timer-div");
+
+function incorrect(){
+    timeLeft -= 10;
+}
+function correct(){
+
+}
 
 function questionOne (){
     homeScreen.style.display = "none";
     firstEl.style.display = "block";
+
 
 }
 
