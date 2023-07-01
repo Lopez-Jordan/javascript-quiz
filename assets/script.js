@@ -4,4 +4,19 @@
 
 // Question 1
     // format question 1 css
+
+
+
+// GLOBAL VARS
+var timeLeft = 100;
+
+
+
+function questionOne (){
     
+
+}
+
+var start = document.getElementById("begin");
+start.addEventListener("click", questionOne);
+
