@@ -6,17 +6,20 @@
 }
 :root {
     --green:rgb(42, 255, 184);
+    --darkGreen: rgb(30, 171, 124);
 }
 body{
     background-color: black;
 }
+
+/* INTRO -------------------------------------------------- */
 #timer-div{
     padding: 10px 20px;
     border: 4px solid white;
     border-radius: 10px;
     float: right;
     margin-right: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     background-color: var(--green);
     font-size: 20px;
     color: black;
@@ -61,22 +64,45 @@ body{
 }
 #begin:hover{
     color: black;
-    background-color: rgb(30, 171, 124);
+    background-color: var(--darkGreen);
 
 }
 
-/* QUESTIONS */
+/* QUESTIONS --------------------------------------------- */
 #first{
     display: none;
     clear: both;
     width: 75%;
-    margin: 0 100px;
+    margin: 0 130px;
+}
+#second{
+    display: none;
+    clear: both;
+    width: 75%;
+    margin: 0 130px;
+}
+#third{
+    display: none;
+    clear: both;
+    width: 75%;
+    margin: 0 130px;
+}
+#fourth{
+    display: none;
+    clear: both;
+    width: 75%;
+    margin: 0 130px;
+}
+#fifth{
+    display: none;
+    clear: both;
+    width: 75%;
+    margin: 0 130px;
 }
 ul li{
     list-style-type: none;
 }
-
-#first ul li button{
+.questionClass ul li button{
     padding: 10px 100px;
     color: black;
     border: 2px solid white;
@@ -87,12 +113,9 @@ ul li{
     font-weight: 600;
 
 }
-#first ul li button:hover{
+.questionClass ul li button:hover{
     padding: 10px 100px;
-
     border: 2px solid white;
     border-radius: 10px;
-    background-color: white;
-
-
+    background-color: var(--darkGreen);
 }
