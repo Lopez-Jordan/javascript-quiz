@@ -11,17 +11,15 @@
 var timeLeft = 100;
 var start = document.getElementById("begin");
 var homeScreen = document.getElementById("homescreen");
-var questionOne = document.getElementById("questionOne");
-
+var start = document.getElementById("begin");
 
 function questionOne (){
     homeScreen.style.display = "none";
-    questions.style.display = "block";
+    
+    var questionOne = document.getElementById("questionOne");
+    questionOne.style.display = "block";
 
 }
 
 
-
-
 start.addEventListener("click", questionOne);
-

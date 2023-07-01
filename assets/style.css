@@ -65,19 +65,7 @@ body{
 
 }
 
-/* NEXT SECTION */
+/* QUESTIONS */
 #questionOne{
-    display: none;
-}
-#questionTwo{
-    display: none;
-}
-#questionThree{
-    display: none;
-}
-#questionFour{
-    display: none;
-}
-#questionFive{
     display: none;
 }
