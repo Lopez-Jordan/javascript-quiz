@@ -12,14 +12,28 @@ var timeLeft = 100;
 var start = document.getElementById("begin");
 var homeScreen = document.getElementById("homescreen");
 var start = document.getElementById("begin");
+var firstEl = document.getElementById("first");
 
 function questionOne (){
     homeScreen.style.display = "none";
-    
-    var questionOne = document.getElementById("questionOne");
-    questionOne.style.display = "block";
+    firstEl.style.display = "block";
 
 }
 
+function questionTwo (){
+
+}
+
+function questionThree (){
+
+}
+
+function questionFour (){
+
+}
+
+function questionFive (){
+
+}
 
 start.addEventListener("click", questionOne);
