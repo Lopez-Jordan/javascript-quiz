@@ -119,3 +119,8 @@ ul li{
     border-radius: 10px;
     background-color: var(--darkGreen);
 }
+
+
+#results{
+    display: none;
+}
