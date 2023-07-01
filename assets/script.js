@@ -40,8 +40,15 @@ function correct(){
     alert("Correct :D"); //Change later
 }
 
+function homeScreen(){
+    resultsEl.style.display = "none";
+    homeScreenEl.style.display = "block"
+    start.addEventListener("click", startTimer);
+    start.addEventListener("click", questionOne);
+}
 
 function questionOne (){
+    resultsEl.style.display = "none";
     homeScreenEl.style.display = "none";
     firstEl.style.display = "block";
     correctEl.addEventListener("click", correct);
@@ -59,7 +66,7 @@ function questionTwo (){
     incorrectEl1 = document.getElementById("q2incorrect1");
     incorrectEl2 = document.getElementById("q2incorrect2");
     incorrectEl3 = document.getElementById("q2incorrect3");
-    
+    resultsEl.style.display = "none";
     firstEl.style.display = "none";
     secondEl.style.display = "block";
 
@@ -78,7 +85,7 @@ function questionThree (){
     incorrectEl1 = document.getElementById("q3incorrect1");
     incorrectEl2 = document.getElementById("q3incorrect2");
     incorrectEl3 = document.getElementById("q3incorrect3");
-
+    resultsEl.style.display = "none";
     secondEl.style.display = "none";
     thirdEl.style.display = "block"
     
@@ -97,7 +104,7 @@ function questionFour (){
     incorrectEl1 = document.getElementById("q4incorrect1");
     incorrectEl2 = document.getElementById("q4incorrect2");
     incorrectEl3 = document.getElementById("q4incorrect3");
-
+    resultsEl.style.display = "none";
     thirdEl.style.display = "none";
     fourthEl.style.display = "block";
 
@@ -116,7 +123,7 @@ function questionFive (){
     incorrectEl1 = document.getElementById("q5incorrect1");
     incorrectEl2 = document.getElementById("q5incorrect2");
     incorrectEl3 = document.getElementById("q5incorrect3");
-
+    resultsEl.style.display = "none";
     fourthEl.style.display = "none";
     fifthEl.style.display = "block";
     
@@ -130,12 +137,11 @@ function questionFive (){
     incorrectEl3.addEventListener("click", results);
 }
 
-
 function results(){
     fifthEl.style.display = "none";
     resultsEl.style.display = "flex";  
     fillEl.innerHTML = score + "  /100";
+    startOverEl.addEventListener("click", homeScreen);
 }
 
-start.addEventListener("click", startTimer);
-start.addEventListener("click", questionOne);
+homeScreen();
