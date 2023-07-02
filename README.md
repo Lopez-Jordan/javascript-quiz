@@ -6,7 +6,7 @@ For this project, although it has a simple design, it was my first time implemen
 the functionality of a website. It is a simple multiplce choice javascript quiz that saves your score locally to the browser once finished. It also features a timer, and a lot of logic. Here I learned how the DOM interacts with javascript and the all the key components to having html elements invoke events with .addEventListener.
 
 <br>
-![Picture of my deployed website](./screenshot.png)
+![Picture of my deployed website](./assets/screenshot.png)
 
 Here is the link to the deployed website: 
 <br>
