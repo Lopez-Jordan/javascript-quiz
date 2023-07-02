@@ -10,7 +10,7 @@
 // GLOBAL VARS
 var timeLeft = 100;
 var score = 0;
-var timerDivEl = document.getElementById("timer-div");
+var timerEl = document.getElementById("timer");
 var start = document.getElementById("begin");
 var homeScreenEl = document.getElementById("homescreen");
 var start = document.getElementById("begin");
@@ -27,8 +27,16 @@ var resultsEl = document.getElementById("results");
 var fillEl = document.getElementById("fill");
 var startOverEl = document.getElementById("startOver")
 
-function startTimer(){
-    // TO DO --------------------------
+function countDown(){
+    timerEl.innerHTML = timeLeft;
+    timeLeft--;
+    if (timeLeft < 0){
+        results();
+    }
+    else{
+        setTimeout(countDown, 1000);
+    }
+
 }
 
 function incorrect(){
@@ -43,7 +51,7 @@ function correct(){
 function homeScreen(){
     resultsEl.style.display = "none";
     homeScreenEl.style.display = "block"
-    start.addEventListener("click", startTimer);
+    start.addEventListener("click", countDown);
     start.addEventListener("click", questionOne);
 }
 
@@ -81,6 +89,7 @@ function questionTwo (){
 }
 
 function questionThree (){
+
     correctEl = document.getElementById("q3correct");
     incorrectEl1 = document.getElementById("q3incorrect1");
     incorrectEl2 = document.getElementById("q3incorrect2");
@@ -119,6 +128,7 @@ function questionFour (){
 }
 
 function questionFive (){
+
     correctEl = document.getElementById("q5correct");
     incorrectEl1 = document.getElementById("q5incorrect1");
     incorrectEl2 = document.getElementById("q5incorrect2");
@@ -138,10 +148,15 @@ function questionFive (){
 }
 
 function results(){
+    timeLeft = 0;
+    firstEl.style.display = "none";
+    secondEl.style.display = "none";
+    thirdEl.style.display = "none";
+    fourthEl.style.display = "none";
     fifthEl.style.display = "none";
     resultsEl.style.display = "flex";  
     fillEl.innerHTML = score + "  /100";
-    startOverEl.addEventListener("click", homeScreen);
+
 }
 
 homeScreen();
