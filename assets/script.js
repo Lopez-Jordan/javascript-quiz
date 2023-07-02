@@ -8,7 +8,7 @@
 
 
 // GLOBAL VARS
-var timeLeft = 100;
+var timeLeft = 60;
 var score = 0;
 var timerEl = document.getElementById("timer");
 var start = document.getElementById("begin");
@@ -26,6 +26,8 @@ var fifthEl = document.getElementById("fifth");
 var resultsEl = document.getElementById("results");
 var fillEl = document.getElementById("fill");
 var startOverEl = document.getElementById("startOver")
+
+
 
 function countDown(){
     timerEl.innerHTML = timeLeft;
