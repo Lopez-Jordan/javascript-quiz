@@ -33,6 +33,9 @@ function logInitials(){
     var initials = nameInput.value;
     localStorage.setItem(initials, score);
 }
+function refreshPage(){
+    location.reload();
+}
 
 function countDown(){
     timerEl.innerHTML = timeLeft;
@@ -163,7 +166,10 @@ function results(){
     resultsEl.style.display = "flex";  
     fillEl.innerHTML = score + "  /100";
     submitButton.addEventListener("click", logInitials);
-
+    startOverEl.addEventListener("click", refreshPage);
 }
 
 homeScreen();
+
+
+localStorage.clear(); // clear that mf
