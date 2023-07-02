@@ -140,7 +140,7 @@ ul li{
 /* RESULTS --------------------------*/
 #results h4{
     margin-top:  100px;
-    font-weight: larger ;
+    font-weight: larger;
 }
 #nameInput{
     margin-top: 10px;
@@ -164,5 +164,4 @@ ul li{
 }
 #submitButton:hover{
     background-color: var(--darkGreen);
-
 }

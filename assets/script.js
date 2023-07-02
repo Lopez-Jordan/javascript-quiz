@@ -10,6 +10,8 @@
 // GLOBAL VARS
 var timeLeft = 60;
 var score = 0;
+var nameInput = document.getElementById('nameInput');
+var submitButton = document.getElementById('submitButton');
 var timerEl = document.getElementById("timer");
 var start = document.getElementById("begin");
 var homeScreenEl = document.getElementById("homescreen");
@@ -27,7 +29,10 @@ var resultsEl = document.getElementById("results");
 var fillEl = document.getElementById("fill");
 var startOverEl = document.getElementById("startOver")
 
-
+function logInitials(){
+    var initials = nameInput.value;
+    localStorage.setItem(initials, score);
+}
 
 function countDown(){
     timerEl.innerHTML = timeLeft;
@@ -38,7 +43,6 @@ function countDown(){
     else{
         setTimeout(countDown, 1000);
     }
-
 }
 
 function incorrect(){
@@ -158,6 +162,7 @@ function results(){
     fifthEl.style.display = "none";
     resultsEl.style.display = "flex";  
     fillEl.innerHTML = score + "  /100";
+    submitButton.addEventListener("click", logInitials);
 
 }
 
