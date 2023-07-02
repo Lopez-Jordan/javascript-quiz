@@ -47,7 +47,6 @@ function countDown(){
         setTimeout(countDown, 1000);
     }
 }
-
 function incorrect(){
     alert("Incorrect :(");
     timeLeft -= 10;
@@ -63,7 +62,6 @@ function homeScreen(){
     start.addEventListener("click", countDown);
     start.addEventListener("click", questionOne);
 }
-
 function questionOne (){
     resultsEl.style.display = "none";
     homeScreenEl.style.display = "none";
@@ -77,7 +75,6 @@ function questionOne (){
     incorrectEl3.addEventListener('click', incorrect);
     incorrectEl3.addEventListener("click", questionTwo);
 }
-
 function questionTwo (){
     correctEl = document.getElementById("q2correct");
     incorrectEl1 = document.getElementById("q2incorrect1");
@@ -96,7 +93,6 @@ function questionTwo (){
     incorrectEl3.addEventListener('click', incorrect);
     incorrectEl3.addEventListener("click", questionThree);
 }
-
 function questionThree (){
 
     correctEl = document.getElementById("q3correct");
@@ -170,6 +166,3 @@ function results(){
 }
 
 homeScreen();
-
-
-localStorage.clear(); // clear that mf
