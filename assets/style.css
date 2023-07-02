@@ -135,3 +135,34 @@ ul li{
 #results h3{
     margin-top: 20px;
 }
+
+
+/* RESULTS --------------------------*/
+#results h4{
+    margin-top:  100px;
+    font-weight: larger ;
+}
+#nameInput{
+    margin-top: 10px;
+    outline: none;
+    background-color: var(--green);
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#submitButton{
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+#submitButton:hover{
+    background-color: var(--darkGreen);
+
+}
