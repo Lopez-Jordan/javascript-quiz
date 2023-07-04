@@ -10,7 +10,7 @@ the functionality of a website. It is a simple multiple-choice javascript quiz t
 
 Here is the link to the deployed website: 
 <br>
-[Click Here for link]()
+[Click Here for link](https://lopez-jordan.github.io/javascript-quiz/)
 
 
 
