@@ -10,7 +10,7 @@ the functionality of a website. It is a simple multiplce choice javascript quiz 
 
 Here is the link to the deployed website: 
 <br>
-[Click Here for link](./assets/javaQuizScreenshot.png)
+[Click Here for link](./assets/images/javaQuizScreenshot.png)
 
 
 
