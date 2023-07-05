@@ -1,11 +1,3 @@
-// press begin button
-    // begin timer countdown (with a var (timeLeft) to decrement)
-    // hide intro and go to question 1
-
-// Question 1
-    // format question 1 css
-
-
 
 // GLOBAL VARS
 var timeLeft = 60;
@@ -30,8 +22,12 @@ var fillEl = document.getElementById("fill");
 var startOverEl = document.getElementById("startOver")
 
 function logInitials(){
-    var initials = nameInput.value;
-    localStorage.setItem(initials, score);
+    var userStorage = {
+        initials: nameInput.value,
+        userScore: score
+    }
+
+    localStorage.setItem("user " + String(localStorage.length), JSON.stringify(userStorage));
 }
 function refreshPage(){
     location.reload();
