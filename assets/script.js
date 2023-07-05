@@ -26,7 +26,6 @@ function logInitials(){
         initials: nameInput.value,
         userScore: score
     }
-
     localStorage.setItem("user " + String(localStorage.length), JSON.stringify(userStorage));
 }
 function refreshPage(){
